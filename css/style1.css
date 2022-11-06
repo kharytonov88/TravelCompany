@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#header-section {
+  background: url(/img/0.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  border-radius: 0% 50% 50% 0%;
+  color: #fff; }
+  #header-section ul {
+    display: flex;
+    padding: 20px 10px;
+    list-style: none; }
+    #header-section ul li {
+      margin: 10px 10px; }
+    #header-section ul a {
+      cursor: pointer; }
+  #header-section .container h2 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal; }
+  #header-section .container .btn-main {
+    background-color: transparent;
+    height: 50px;
+    width: 130px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #9ea4a8;
+    box-shadow: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+#tours-section .container {
+  text-align: center; }
+#tours-section .content {
+  padding: 15px; }
+#tours-section h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  color: #bfbfbf; }
+#tours-section .boxes, #tours-section .box {
+  margin: 30px auto; }
+#tours-section .box {
+  display: flex;
+  width: 800px;
+  height: auto;
+  border: 1px solid #bfbfbf;
+  box-shadow: -3px -1px 30px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px -1px 30px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px -1px 30px -4px rgba(0, 0, 0, 0.75);
+  align-items: center; }
+#tours-section .img-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 300px;
+  width: 950px; }
+#tours-section .tour-img-1 {
+  background-image: url(/img/1.jpg); }
+#tours-section .tour-img-2 {
+  background-image: url(/img/2.jpg); }
+#tours-section .tour-img-3 {
+  background-image: url(/img/3.jpg); }
+#tours-section .box p {
+  text-align: justify; }
+
+#testimonial-section .testimonials-container {
+  background-color: #a77676;
+  width: 1200px;
+  margin: 30px auto;
+  padding: 10px; }
+#testimonial-section h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #c494a4; }
+#testimonial-section p {
+  color: #fff; }
+#testimonial-section .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px; }
+#testimonial-section .card {
+  display: flex;
+  width: 350px;
+  height: 80px;
+  background-color: #c494a4;
+  margin: 5px;
+  padding: 20px;
+  align-items: center; }
+#testimonial-section img {
+  border-radius: 50%;
+  height: 80px; }
+#testimonial-section .content {
+  padding-left: 40px; }
+#testimonial-section .creator {
+  padding-left: 40px; }
+
+#form-section .tour-form {
+  background-color: #9ea4a8;
+  max-width: 60em;
+  height: 90px;
+  margin: 60px auto;
+  text-align: center;
+  padding-top: 60px; }
+#form-section .form-group {
+  text-align: center; }
+#form-section h2 {
+  color: #bfbfbf;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  margin-bottom: 30px; }
+#form-section input,
+#form-section select {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #7a7171;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #7a7171; }
+#form-section input[id="country"] {
+  margin-right: 40px; }
+#form-section select {
+  margin-left: 40px; }
+
+#footer-section .footer-container {
+  background-color: #22638f;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 100px 100px; }
+#footer-section .footer-header {
+  color: #1480c9; }
+#footer-section p {
+  font-size: smaller; }
+#footer-section .links {
+  margin-top: 20px; }
+#footer-section li {
+  list-style: none;
+  padding-left: 20px;
+  color: #1480c9;
+  font-size: smaller; }
+#footer-section .social {
+  padding: 20px;
+  margin-right: 20px; }
+#footer-section .social-icons {
+  display: flex; }
+#footer-section .icon {
+  margin: 10px; }
+#footer-section img {
+  height: 30px; }
+#footer-section .feedback {
+  margin-top: 20px; }
+#footer-section form input {
+  width: 420px;
+  height: 30px;
+  margin: 5px auto;
+  color: #fff; }
+#footer-section form input[type="submit"] {
+  background-color: #083858; }
+#footer-section .payments {
+  display: flex; }
+  #footer-section .payments .icon:nth-last-child(3) {
+    height: 50px; }

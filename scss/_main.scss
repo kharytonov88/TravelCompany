@@ -1,0 +1,243 @@
+@mixin centering {
+	transform: translate(-50%, -50%);
+}
+@mixin main-font {
+	font-family: "Source Sans Pro", sans-serif;
+}
+@mixin card-image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 300px;
+	width: 950px;
+}
+$footer-colors: (
+	"footer-bg-color": $footer-bg-color,
+	"footer-font-color": $footer-font-color,
+	"footer-btn-color": $footer-btn-color,
+);
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#header-section {
+	background: $header-bg-img;
+	background-size: cover;
+	height: 100vh;
+	border-radius: 0% 50% 50% 0%;
+	color: #fff;
+	ul {
+		display: flex;
+		padding: 20px 10px;
+		list-style: none;
+		li {
+			margin: 10px 10px;
+		}
+		a {
+			cursor: pointer;
+		}
+	}
+	.container {
+		h2 {
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			left: 50%;
+			@include centering;
+			@include main-font;
+			font-weight: normal;
+		}
+		.btn-main {
+			background-color: transparent;
+			height: 50px;
+			width: 130px;
+			cursor: pointer;
+			border: 1px solid #fff;
+			color: #9ea4a8;
+			box-shadow: none;
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			@include centering;
+		}
+	}
+}
+
+#tours-section {
+	.container {
+		text-align: center;
+	}
+	.content {
+		padding: 15px;
+	}
+	h2 {
+		@include main-font;
+		font-weight: normal;
+		color: $main-font-color;
+	}
+	.boxes {
+		margin: 30px auto;
+	}
+	.box {
+		display: flex;
+		width: 800px;
+		height: auto;
+		border: 1px solid #bfbfbf;
+		box-shadow: -3px -1px 30px -4px rgba(0, 0, 0, 0.75);
+		-webkit-box-shadow: -3px -1px 30px -4px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: -3px -1px 30px -4px rgba(0, 0, 0, 0.75);
+		@extend .boxes;
+		align-items: center;
+	}
+	.img-container {
+		@include card-image;
+	}
+	.tour-img-1 {
+		background-image: $img-1;
+	}
+	.tour-img-2 {
+		background-image: $img-2;
+	}
+	.tour-img-3 {
+		background-image: $img-3;
+	}
+	.box p {
+		text-align: justify;
+	}
+}
+
+#testimonial-section {
+	.testimonials-container {
+		background-color: $testimonial-bg-color;
+		width: 1200px;
+		margin: 30px auto;
+		padding: 10px;
+	}
+	h2 {
+		@include main-font;
+		font-weight: normal;
+		text-align: center;
+		color: $testimonial-box-color;
+	}
+	p {
+		color: #fff;
+	}
+	.card-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 160px;
+	}
+	.card {
+		display: flex;
+		width: 350px;
+		height: 80px;
+		background-color: $testimonial-box-color;
+		margin: 5px;
+		padding: 20px;
+		align-items: center;
+	}
+	img {
+		border-radius: 50%;
+		height: 80px;
+	}
+	.content {
+		padding-left: 40px;
+	}
+	.creator {
+		padding-left: 40px;
+	}
+}
+
+#form-section {
+	.tour-form {
+		background-color: $form-bg-color;
+		max-width: 60em;
+		height: 90px;
+		margin: 60px auto;
+		text-align: center;
+		padding-top: 60px;
+	}
+	.form-group {
+		text-align: center;
+	}
+	h2 {
+		color: $main-font-color;
+		@include main-font;
+		font-weight: normal;
+		margin-bottom: 30px;
+	}
+	input,
+	select {
+		@include main-font;
+		color: $form-color;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid $form-color;
+	}
+	input[id="country"] {
+		margin-right: 40px;
+	}
+	select {
+		margin-left: 40px;
+	}
+}
+
+#footer-section {
+	.footer-container {
+		background-color: map-get($footer-colors, "footer-bg-color");
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 2fr;
+		grid-template-rows: 100px 100px;
+	}
+	.footer-header {
+		color: map-get($footer-colors, "footer-font-color");
+	}
+	p {
+		font-size: smaller;
+	}
+	.links {
+		margin-top: 20px;
+	}
+	li {
+		list-style: none;
+		padding-left: 20px;
+		color: map-get($footer-colors, "footer-font-color");
+		font-size: smaller;
+	}
+	.social {
+		padding: 20px;
+		margin-right: 20px;
+	}
+	.social-icons {
+		display: flex;
+	}
+	.icon {
+		margin: 10px;
+	}
+	img {
+		height: 30px;
+	}
+	.feedback {
+		margin-top: 20px;
+	}
+	form {
+		input {
+			width: 420px;
+			height: 30px;
+			margin: 5px auto;
+			color: #fff;
+		}
+		input[type="submit"] {
+			background-color: map-get($footer-colors, "footer-btn-color");
+		}
+	}
+	.payments {
+		display: flex;
+		.icon:nth-last-child(3) {
+			height: 50px;
+		}
+	}
+}
